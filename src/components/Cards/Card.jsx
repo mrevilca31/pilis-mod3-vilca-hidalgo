@@ -15,18 +15,19 @@ const Card = () => {
   return (
     <div className="card-container">
       {console.log(cardInfo)}
+      <h3>Tarjeta</h3>
       <div className="card">
         <h2>Nombre: Ver local storage</h2>
         <p>Latitud: {cardInfo.latitude}</p>
         <p>Longitud: {cardInfo.longitude}</p>
-        <p>
+        {/* <p>
           Temperatura: {cardInfo.current_weather.temperature}°C comprobar
           unidades
         </p>
         <p>
           Velocidad del Viento: {cardInfo.current_weather.windspeed}km/h
           comprobar unidades
-        </p>
+        </p> */}
       </div>
     </div>
   );
