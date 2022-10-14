@@ -1,20 +1,17 @@
-import logo from "./logo.svg";
 import "./App.css";
-import { getCardInfo } from "./service";
-import Card from "./components/Cards/Card";
 import { Route, Routes } from "react-router-dom";
 import Home from "./routes/Home/Home";
 import CrearCard from "./routes/Card/CrearCard";
+import VerCard from "./routes/Card/VerCard";
 
 function App() {
   return (
     <div className="App">
-      {/* <Routes>
-        <Route index element={<Home />} />
-        <Route path="/card/create" element={<CrearCard />} />
-      </Routes> */}
-
-      <CrearCard />
+      <Routes>
+        <Route path="/crearCard" element={<CrearCard />} />
+        <Route path="/card/:id" element={<VerCard />} />
+        <Route path="/" element={<Home />} />
+      </Routes>
     </div>
   );
 }

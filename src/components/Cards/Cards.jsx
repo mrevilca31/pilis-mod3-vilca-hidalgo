@@ -7,7 +7,7 @@ const Cards = ({ cards }) => {
       <h2>Lista de Tarjetas</h2>
       {cards.map((card) => (
         // falta asignar un id para las tarjetas
-        <Card key={card.id} card={card} />
+        <Card key={card.id} cardName={card.name} id={card.id} />
       ))}
     </div>
   );
