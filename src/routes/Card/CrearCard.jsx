@@ -1,14 +1,12 @@
-import { useContext, useEffect, useState } from "react";
+import { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { TarjetasDeClimaContext } from "../../context/TarjetasDeClimaContext";
 import { useForm } from "react-hook-form";
-import { getCardInfo } from "../../service";
 
 const CrearCard = () => {
   const { tarjetasDeClima, setTarjetasDeClima } = useContext(
     TarjetasDeClimaContext
   );
-  const [cardInfo, setCardInfo] = useState([]);
   const navigate = useNavigate();
 
   const {
@@ -17,25 +15,15 @@ const CrearCard = () => {
     formState: { errors },
   } = useForm();
 
-  const onSubmit = async (data) => {
-    //console.log(data);
-
-    // getCardInfo(data.latitud, data.longitud)
-    //   .then((data) => setCardInfo(data))
-    //   .catch((err) => console.log(err));
-
+  const onSubmit = (data) => {
     const nuevaCard = {
       id: tarjetasDeClima.length + 1,
       name: data.cardName,
       latitud: data.latitud,
       longitud: data.longitud,
-      // temperatura: cardInfo.current_weather.temperature,
-      // velocidad: cardInfo.current_weather.windspeed,
     };
-    console.log(nuevaCard);
 
     setTarjetasDeClima([...tarjetasDeClima, nuevaCard]);
-    console.log(tarjetasDeClima);
     navigate("/");
   };
 
