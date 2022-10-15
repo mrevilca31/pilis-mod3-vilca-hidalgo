@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/pilis-mod3-vilca-hidalgo/static/css/main.1f1da5eb.css",
-    "main.js": "/pilis-mod3-vilca-hidalgo/static/js/main.26f14f94.js",
+    "main.css": "/pilis-mod3-vilca-hidalgo/static/css/main.65191c0b.css",
+    "main.js": "/pilis-mod3-vilca-hidalgo/static/js/main.3f52e357.js",
     "static/js/787.2f4829e3.chunk.js": "/pilis-mod3-vilca-hidalgo/static/js/787.2f4829e3.chunk.js",
     "static/media/logo.png": "/pilis-mod3-vilca-hidalgo/static/media/logo.c461c2121b609237f1b9.png",
     "index.html": "/pilis-mod3-vilca-hidalgo/index.html",
-    "main.1f1da5eb.css.map": "/pilis-mod3-vilca-hidalgo/static/css/main.1f1da5eb.css.map",
-    "main.26f14f94.js.map": "/pilis-mod3-vilca-hidalgo/static/js/main.26f14f94.js.map",
+    "main.65191c0b.css.map": "/pilis-mod3-vilca-hidalgo/static/css/main.65191c0b.css.map",
+    "main.3f52e357.js.map": "/pilis-mod3-vilca-hidalgo/static/js/main.3f52e357.js.map",
     "787.2f4829e3.chunk.js.map": "/pilis-mod3-vilca-hidalgo/static/js/787.2f4829e3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1f1da5eb.css",
-    "static/js/main.26f14f94.js"
+    "static/css/main.65191c0b.css",
+    "static/js/main.3f52e357.js"
   ]
 }
