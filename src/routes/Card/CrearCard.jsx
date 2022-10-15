@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { TarjetasDeClimaContext } from "../../context/TarjetasDeClimaContext";
 import { useForm } from "react-hook-form";
+import "./CrearCard.css";
 
 const CrearCard = () => {
   const { tarjetasDeClima, setTarjetasDeClima } = useContext(
@@ -30,7 +31,7 @@ const CrearCard = () => {
   return (
     <div>
       <span>Crear Nueva Tarjeta</span>
-      <form className="card-form" onSubmit={handleSubmit(onSubmit)}>
+      <form className="card" onSubmit={handleSubmit(onSubmit)}>
         <input
           className="input-card-name-form"
           type="text"
