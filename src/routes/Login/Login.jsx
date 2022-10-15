@@ -20,10 +20,10 @@ const Login = () => {
   };
 
   return (
-    <div className="sign-in-container">
-      <div className="card">
-      <span>Ingresa con tu usuario y contraseña</span>
-      <form className="sign-in-form" onSubmit={handleSubmit(onSubmit)}>
+    <div className="login-container">
+      <div className="login">
+      <h1 className="texto">Ingresa con tu usuario y contraseña</h1>
+      <form className="form" onSubmit={handleSubmit(onSubmit)}>
         <input
           className="input-form"
           type="text"

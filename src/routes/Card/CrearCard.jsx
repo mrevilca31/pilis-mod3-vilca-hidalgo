@@ -30,8 +30,9 @@ const CrearCard = () => {
 
   return (
     <div className="sign-in-container">
-      <span>Crear Nueva Tarjeta</span>
+      
       <form className="card" onSubmit={handleSubmit(onSubmit)}>
+      <h1 className="texto">Crear Nueva Tarjeta</h1>
         <input
           className="input-form"
           type="text"
@@ -62,13 +63,14 @@ const CrearCard = () => {
         />
         <p>{errors.longitud?.message}</p>
 
-        <button className="btn-form" type="submit">
+        <button className="button" type="submit">
           Crear Tarjeta
         </button>
-      </form>
-      <Link className="nav-link" to="/">
+        <Link className="nav-link" to="/">
         Volver al Inicio
       </Link>
+      </form>
+      
     </div>
   );
 };
