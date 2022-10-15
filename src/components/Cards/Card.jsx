@@ -18,14 +18,21 @@ const Card = ({ cardName, id }) => {
   return (
    <section className="footer_container">
     <div className="card2">
-      <h3>Tarjetas</h3>
-      <h4>Nombre: {cardName}</h4>
-      <Link className="nav-link" to={`/card/${id}`}>
-        Ver más
-      </Link>
-      <div className="fav" onClick={handleDelete}>
-        <FaRegTrashAlt />
-      </div>
+    
+      <h4>Ubicacion: {cardName}</h4>
+      <div className="botones">
+        
+          <Link className="nav-link" to={`/card/${id}`}>
+          Ver más
+          </Link>
+        </div>
+
+        <div className="nav-link" onClick={handleDelete}>
+           <FaRegTrashAlt />Eliminar
+         </div>
+         
+      
+      
     </div>
   </section>
   );

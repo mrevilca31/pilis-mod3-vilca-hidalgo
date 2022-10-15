@@ -1,8 +1,17 @@
-.container {
+.login-container {
+  display: flex;
+  align-items: center;
   background-color: #d16666;
-  width: 40vw;
-  border-radius: 10px;
-  padding: 30px;
+  justify-content: center;
+}
+
+.login {
+  background: #7fb285;
+  color: white;
+  padding: 2em;
+  border-radius: 30px;
+  width: 70%;
+  max-width: 420px;
 }
 
 .card-name {

@@ -27,16 +27,18 @@ const VerCard = () => {
   }, []);
 
   return (
-    <div className="container">
+    <div className="login-container">
+      <div className="login">
       <h1 className="card-name">{card.name}</h1>
       <h2 className="card-info">Latitud: {card.latitud}</h2>
       <h2 className="card-info">Longitud: {card.longitud}</h2>
       <h2 className="card-info">Temperatura actual: {temperatura}°C</h2>
       <h2 className="card-info">Velocidad del viento: {velocidad} km/h</h2>
 
-      <Link className="btn-back" to="/">
+      <Link className="nav-link" to="/">
         <FaHome /> Volver al Inicio
       </Link>
+      </div>
     </div>
   );
 };

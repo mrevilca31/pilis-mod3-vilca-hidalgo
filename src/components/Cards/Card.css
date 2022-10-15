@@ -12,3 +12,12 @@
     max-width: 420px;
     margin: 1em;
   }
+  .botones {
+    display:flex;
+    flex-direction:row;
+
+  }
+
+
+
+  
