@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { TarjetasDeClimaContext } from "../../context/TarjetasDeClimaContext";
 import { useForm } from "react-hook-form";
 
@@ -65,6 +65,9 @@ const CrearCard = () => {
           Crear Tarjeta
         </button>
       </form>
+      <Link className="btn-back" to="/">
+        Volver al Inicio
+      </Link>
     </div>
   );
 };

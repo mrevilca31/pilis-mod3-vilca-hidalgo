@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import Cards from "../../components/Cards/Cards";
+import Navbar from "../../components/Navbar/Navbar";
 import { TarjetasDeClimaContext } from "../../context/TarjetasDeClimaContext";
 
 const Home = () => {
@@ -9,9 +10,14 @@ const Home = () => {
   return (
     <>
       <div>
-        <Link className="nav-link" to="/crearCard">
+        <Navbar />
+        {/* <Link className="nav-link" to="/crearCard">
           Crear Tarjeta de Clima
         </Link>
+        <br />
+        <Link className="nav-link" to="/login">
+          Registrarse
+        </Link> */}
         <h1>Home</h1>
         <Cards cards={tarjetasDeClima} />
       </div>
