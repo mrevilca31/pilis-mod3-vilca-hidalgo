@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/pilis-mod3-vilca-hidalgo/static/css/main.1f1da5eb.css",
+    "main.js": "/pilis-mod3-vilca-hidalgo/static/js/main.4db2526c.js",
+    "static/js/787.2f4829e3.chunk.js": "/pilis-mod3-vilca-hidalgo/static/js/787.2f4829e3.chunk.js",
+    "static/media/logo.png": "/pilis-mod3-vilca-hidalgo/static/media/logo.c461c2121b609237f1b9.png",
+    "index.html": "/pilis-mod3-vilca-hidalgo/index.html",
+    "main.1f1da5eb.css.map": "/pilis-mod3-vilca-hidalgo/static/css/main.1f1da5eb.css.map",
+    "main.4db2526c.js.map": "/pilis-mod3-vilca-hidalgo/static/js/main.4db2526c.js.map",
+    "787.2f4829e3.chunk.js.map": "/pilis-mod3-vilca-hidalgo/static/js/787.2f4829e3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1f1da5eb.css",
+    "static/js/main.4db2526c.js"
+  ]
+}
