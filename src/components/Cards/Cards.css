@@ -1,43 +1,54 @@
-
-
-.footer__container{
+.footer__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #fff;
   padding-bottom: 60px;
-
 }
-
 
 .nav-link {
-  color:white;
-
+  color: white;
+}
+.ver-mas {
+  background-color: #2c4251;
+  text-decoration: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
 }
 
-.card2{
-    
-    background:#D16666;
-    color: white;
-    padding: 2em;
-    border-radius: 30px;
-    width: 50%;
-    max-width: 420px;
-    margin: 1em;
-  }
+.delete {
+  background-color: #2c4251;
+  border-radius: 5px;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
 
-  .nueva_clase{
-    display: flex;
-    flex-wrap:wrap ;
+.botones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 
-  }
-  
- 
-  
- 
-  
-  
-  
- 
+.card2 {
+  background: #d16666;
+  color: white;
+  padding: 2em;
+  border-radius: 30px;
+  width: 50%;
+  max-width: 420px;
+  margin: 1em;
+}
 
- 
+.nueva_clase {
+  display: flex;
+  flex-wrap: wrap;
+}

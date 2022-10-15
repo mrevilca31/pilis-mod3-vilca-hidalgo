@@ -4,14 +4,13 @@ import Card from "./Card";
 const Cards = ({ cards }) => {
   return (
     <div>
-      <h2>Lista de Tarjetas</h2>
+      <h2>Lista de Ubicaciones</h2>
       <div className="nueva_clase">
         {cards.map((card) => (
-        // falta asignar un id para las tarjetas
-        <Card key={card.id} cardName={card.name} id={card.id} />
-      ))}
+          // falta asignar un id para las tarjetas
+          <Card key={card.id} cardName={card.name} id={card.id} />
+        ))}
       </div>
-      
     </div>
   );
 };

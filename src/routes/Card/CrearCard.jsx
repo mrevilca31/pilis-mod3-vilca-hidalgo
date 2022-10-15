@@ -30,9 +30,8 @@ const CrearCard = () => {
 
   return (
     <div className="sign-in-container">
-      
       <form className="card" onSubmit={handleSubmit(onSubmit)}>
-      <h1 className="texto">Crear Nueva Tarjeta</h1>
+        <h1 className="texto">Crear Nueva Tarjeta</h1>
         <input
           className="input-form"
           type="text"
@@ -66,11 +65,11 @@ const CrearCard = () => {
         <button className="button" type="submit">
           Crear Tarjeta
         </button>
+        <br />
         <Link className="nav-link" to="/">
-        Volver al Inicio
-      </Link>
+          Volver al Inicio
+        </Link>
       </form>
-      
     </div>
   );
 };

@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { useForm } from "react-hook-form";
 import { Link, useNavigate } from "react-router-dom";
 import { UserContext } from "../../context/UserContext";
-import "./Login.css"
+import "./Login.css";
 
 const Login = () => {
   const { setCurrentUser } = useContext(UserContext);
@@ -22,33 +22,31 @@ const Login = () => {
   return (
     <div className="login-container">
       <div className="login">
-      <h1 className="texto">Ingresa con tu usuario y contraseña</h1>
-      <form className="form" onSubmit={handleSubmit(onSubmit)}>
-        <input
-          className="input-form"
-          type="text"
-          placeholder="Nombre de usuario"
-          {...register("username", {
-            required: "Debe ingresar su nombre de usuario",
-          })}
-        />
-        <p>{errors.username?.message}</p>
-        <input
-          className="input-form"
-          type="password"
-          placeholder="Contraseña"
-          {...register("password", {
-            required: "Debe ingresar su contraseña",
-          })}
-        />
-        <p>{errors.password?.message}</p>
-        <button className="btn-form" type="submit">
-          Iniciar Sesión
-        </button>
-      </form>
-      <Link className="nav-link" to="/">
-        Volver al Inicio
-      </Link>
+        <h1 className="texto">Ingresa con tu usuario y contraseña</h1>
+        <form className="form" onSubmit={handleSubmit(onSubmit)}>
+          <input
+            className="input-form"
+            type="text"
+            placeholder="Nombre de usuario"
+            {...register("username", {
+              required: "Debe ingresar su nombre de usuario",
+            })}
+          />
+          <p>{errors.username?.message}</p>
+          <input
+            className="input-form"
+            type="password"
+            placeholder="Contraseña"
+            {...register("password", {
+              required: "Debe ingresar su contraseña",
+            })}
+          />
+          <p>{errors.password?.message}</p>
+          <button className="btn-form" type="submit">
+            Iniciar Sesión
+          </button>
+        </form>
+        <br />
       </div>
     </div>
   );

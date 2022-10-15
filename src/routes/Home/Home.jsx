@@ -19,11 +19,10 @@ const Home = () => {
         <Link className="nav-link" to="/login">
           Registrarse
         </Link> */}
-        <h1>Home</h1>
-    
+        <h1>Weather Cards</h1>
+
         <Cards cards={tarjetasDeClima} />
       </div>
-  
     </>
   );
 };
