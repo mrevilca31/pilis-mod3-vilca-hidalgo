@@ -29,11 +29,11 @@ const CrearCard = () => {
   };
 
   return (
-    <div>
+    <div className="sign-in-container">
       <span>Crear Nueva Tarjeta</span>
       <form className="card" onSubmit={handleSubmit(onSubmit)}>
         <input
-          className="input-card-name-form"
+          className="input-form"
           type="text"
           placeholder="Nombre del sitio"
           {...register("cardName", {
@@ -43,7 +43,7 @@ const CrearCard = () => {
         <p>{errors.cardName?.message}</p>
 
         <input
-          className="input-card-longitud-form"
+          className="input-form"
           type="text"
           placeholder="Latitud"
           {...register("latitud", {
@@ -53,7 +53,7 @@ const CrearCard = () => {
         <p>{errors.latitud?.message}</p>
 
         <input
-          className="input-card-latitud-form"
+          className="input-form"
           type="text"
           placeholder="Longitud"
           {...register("longitud", {
@@ -66,7 +66,7 @@ const CrearCard = () => {
           Crear Tarjeta
         </button>
       </form>
-      <Link className="btn-back" to="/">
+      <Link className="nav-link" to="/">
         Volver al Inicio
       </Link>
     </div>
