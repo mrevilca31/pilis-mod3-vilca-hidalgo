@@ -1,6 +1,8 @@
 import { useContext, useEffect } from "react";
 import { Link, Outlet } from "react-router-dom";
 import { UserContext } from "../../context/UserContext";
+import "./Navbar.css";
+import logo from "../../assets/logo.png";
 
 const Navbar = () => {
   const { currentUser, setCurrentUser } = useContext(UserContext);
@@ -19,9 +21,9 @@ const Navbar = () => {
   return (
     <>
       <div className="navigation">
-        {/* <Link className="logo-container" to="/">
-            <img src={palettoLogo} alt="Logo" className="logo" />
-          </Link> */}
+        <Link className="logo-container" to="/">
+          <img src={logo} alt="Logo" className="logo" />
+        </Link>
         <div className="nav-links-container">
           {currentUser ? (
             <Link className="nav-link" to="/crearCard">

@@ -2,6 +2,8 @@ import { useContext, useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { TarjetasDeClimaContext } from "../../context/TarjetasDeClimaContext";
 import { getCardInfo } from "../../service";
+import { FaHome } from "react-icons/fa";
+import "./VerCard.css";
 
 const VerCard = () => {
   const [cardInfo, setCardInfo] = useState([]);
@@ -25,17 +27,17 @@ const VerCard = () => {
   }, []);
 
   return (
-    <>
-      <h1>{card.name}</h1>
-      <h2>Latitud: {card.latitud}</h2>
-      <h2>Longitud: {card.longitud}</h2>
-      <h2>Temperatura actual: {temperatura}°C</h2>
-      <h2>Velocidad del viento: {velocidad} km/h</h2>
+    <div className="container">
+      <h1 className="card-name">{card.name}</h1>
+      <h2 className="card-info">Latitud: {card.latitud}</h2>
+      <h2 className="card-info">Longitud: {card.longitud}</h2>
+      <h2 className="card-info">Temperatura actual: {temperatura}°C</h2>
+      <h2 className="card-info">Velocidad del viento: {velocidad} km/h</h2>
 
       <Link className="btn-back" to="/">
-        Volver al Inicio
+        <FaHome /> Volver al Inicio
       </Link>
-    </>
+    </div>
   );
 };
 

@@ -1,0 +1,22 @@
+.container {
+  background-color: #dd52aa9c;
+  width: 40vw;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.card-name {
+  font-size: 40px;
+}
+
+.card-info {
+  font-size: 25px;
+}
+
+.btn-back {
+  text-decoration: none;
+  background-color: aliceblue;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 15px;
+}
