@@ -1,0 +1,46 @@
+
+  
+  .input-form {
+    background: none;
+    background-color: white;
+    font-size: 18px;
+    padding: 10px 40px 10px 5px;
+    display:block;
+    width: 300px;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #000;
+    margin: 25px 0;
+    align-items: center;
+
+  }
+  
+  .input-form:focus {
+    outline: none;
+  }
+  
+  .btn-form {
+    min-width: 165px;
+    width: auto;
+    height: 50px;
+    border-radius: 5px;
+    letter-spacing: 0.5px;
+    line-height: 50px;
+    padding: 0 35px 0 35px;
+    font-size: 15px;
+    background-color: black;
+    color: white;
+    font-weight: bolder;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+  }
+  .sign-in-container {
+    display:flexbox;
+    
+    align-items: center;
+    background-color:#dd52aa9c;
+  
+  }

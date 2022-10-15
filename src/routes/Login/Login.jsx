@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { useForm } from "react-hook-form";
 import { Link, useNavigate } from "react-router-dom";
 import { UserContext } from "../../context/UserContext";
+import "./Login.css"
 
 const Login = () => {
   const { setCurrentUser } = useContext(UserContext);
@@ -20,6 +21,7 @@ const Login = () => {
 
   return (
     <div className="sign-in-container">
+      <div className="card">
       <span>Ingresa con tu usuario y contraseña</span>
       <form className="sign-in-form" onSubmit={handleSubmit(onSubmit)}>
         <input
@@ -44,9 +46,10 @@ const Login = () => {
           Iniciar Sesión
         </button>
       </form>
-      <Link className="btn-back" to="/">
+      <Link className="nav-link" to="/">
         Volver al Inicio
       </Link>
+      </div>
     </div>
   );
 };

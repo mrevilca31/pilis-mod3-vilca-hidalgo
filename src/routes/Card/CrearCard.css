@@ -1,3 +1,12 @@
+.sign-in-container, .sign-in-form {
+  display:flexbox;
+
+  align-items: center;
+  background-color:#dd52aa9c;
+
+}
+
+
 .nav-link {
     color:white;
 
@@ -8,9 +17,10 @@
     color: white;
     padding: 2em;
     border-radius: 30px;
-    width: 100%;
+    width: 70%;
     max-width: 420px;
     margin: 1em;
+   
   }
   
   .search {
@@ -63,4 +73,5 @@
     margin-left: 8px;
   }
   
- 
+  
+  
